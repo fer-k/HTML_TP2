@@ -1,0 +1,191 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,400,700,900);
+/*font-family: 'Raleway', sans-serif;*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+/*font-family: 'Open Sans', sans-serif;*/
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.menu-header a {
+	color: #acb0b3;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 13px;
+	letter-spacing: 2px;
+}
+
+
+.contenedor-inicial {
+	background-image: url(../img/indexbanner-bg3.jpg);
+	height: 688px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+h1 {
+	color: #FFF;
+	font-size: 43px;
+}
+
+h2 {
+	color: #132c42;
+	font-size: 38px;
+}
+
+
+h4 {
+	color: #FFF;
+	font-weight: 200;
+	font-size: 18px;
+}
+
+p {
+	color: #58595b;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.form-search {
+	height: 60px;
+}
+
+.form-search {
+	padding: 0px;
+	margin: 0px;
+	height: 80px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	border: none;
+}
+
+
+.boton {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-color: #00adf2;
+	color: #FFF;
+	font-size: 12px;
+	font-weight: 700;
+	border: none;
+}
+
+
+.servicios-destacados {
+	text-align: center;
+}
+
+h3 {
+	color: #132c42;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 15px;
+}
+
+.servicios-destacados p, .caracteristicas p, .tabla-precios p, td {
+	color: #58595b;
+	font-weight: 900px;
+	font-size: 15px;
+}
+
+.caract-izq {
+	text-align: right;
+}
+
+.caract-der {
+	text-align: left;
+}
+
+.contenedor-secundario {
+	background-image: url(../img/indexbanner-bg2.jpg);
+	height: 688px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.tabla-precios h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+
+sup {
+	font-size: 20px;
+}
+
+.valor-tabla {
+	font-weight: 700;
+	font-size: 17px;
+}
+
+.color1 {
+	color: #00d7fe;
+}
+
+.color2 {
+	color: #fed501;
+}
+
+.color3 {
+	color: #ff9456;
+}
+
+.color4 {
+	color: #ff5f3d;
+}
+
+.boton-tabla {
+	border: none;
+	background-color: #00aef3;
+	text-transform: uppercase;
+	color: #FFF;
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	height: 40px;
+	width: 150px;
+	border-radius: 5px;
+}
+
+.ver-mas {
+	background-color: #142e3f;
+	height: 250px;
+	text-align: center;
+}
+
+.ver-mas h3 {
+	color: #FFF;
+	font-weight: 200;
+	text-transform: none;
+	font-size: 30px;
+}
+
+.ver-mas span {
+	color: #00aef3;
+	font-weight: 700;
+}
+
+.pie {
+	background-color: #091722;
+	height: 120px;
+}
+
+.pie p {
+	color: #FFF;
+	font-weight: 200;
+	font-size: 13px;
+}
+
+.pie a {
+	color: #FFF;
+	font-weight: 400;
+	font-size: 13px;
+}
