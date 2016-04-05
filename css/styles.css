@@ -6,7 +6,13 @@
 
 body {
 	font-family: 'Raleway', sans-serif;
+	margin: 0;
 }
+
+* {
+	box-sizing: border-box;
+}
+
 
 a {
 	text-decoration: none;
@@ -16,7 +22,29 @@ ul {
 	list-style: none;
 }
 
-.menu-header a {
+
+
+/* NAV BAR */
+header {
+	width: 1200px;
+	padding: 15px;
+	z-index: 600;
+	background-color: #FFF;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.cleaner {
+	clear: both;
+}
+
+nav {
+	float: right;
+}
+
+nav a {
 	color: #acb0b3;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -24,22 +52,82 @@ ul {
 	letter-spacing: 2px;
 }
 
+nav li {
+	display: inline-block;
+	margin-left: 15px;
+}
+
+header img {
+	margin-top: 10px;
+}
+
+
+/* BANNER PPAL */
 
 .contenedor-inicial {
 	background-image: url(../img/indexbanner-bg3.jpg);
-	height: 688px;
+	min-height: 500px;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-position: center top;
 }
 
-h1 {
+.wrapper {
+	width: 1200px;
+	margin: auto;
+}
+
+.main-title {
 	color: #FFF;
 	font-size: 43px;
+	display: inline-block;
+	margin: 280px 0 0; /*(arriba 280, abajo 0, costados 0)*/
 }
 
-h2 {
-	color: #132c42;
-	font-size: 38px;
+
+.main-title + p {
+	color: #FFF;
+	font-weight: 400;
+	font-size: 18px;
+	width: 600px;
+	line-height: 37px;
+	margin-top: 30px;
+}
+
+
+/* FORM SEARCH */
+.buscador {
+	position: relative;
+	margin-top: 200px;
+}
+
+.buscador input[type=text] {
+	width: 100%;
+	height: 100px;
+	border: solid 1px #ccc;
+	padding: 0 210px 0 30px;
+	font-size: 18px;
+	font-family: inherit;
+}
+
+.buscador input[type=submit] {
+	width: 200px;
+	height: 100px;
+	background-color: #00adf2;
+	color: #FFF;
+	font-family: inherit;
+	font-size: 15px;
+	border: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 700;
+}
+
+/* SERVICIOS DESTACADOS */
+.servicios-destacados {
+	margin-top: 120px;
 }
 
 
@@ -49,26 +137,36 @@ h4 {
 	font-size: 18px;
 }
 
+
+.servicios-destacados article {
+	text-align: center;
+	width: 300px;
+	float: left;
+	padding: 0 25px;
+}
+
 p {
 	color: #58595b;
-	font-weight: 400;
 	font-size: 18px;
-}
-
-.form-search {
-	height: 60px;
-}
-
-.form-search {
-	padding: 0px;
-	margin: 0px;
-	height: 80px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 18px;
-	border: none;
+	line-height: 27px;
+	margin-top: 20px;
 }
 
 
+/* CARACTERISTICAS */
+.subtitle {
+	text-align: center;
+	color: #132c42;
+	font-size: 38px;
+	margin: 80px 0 10px;
+}
+
+.subtitle + p {
+	text-align: center;
+	margin-bottom: 90px;
+}
+
+/*
 .boton {
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -78,17 +176,51 @@ p {
 	font-weight: 700;
 	border: none;
 }
+*/
 
-
-.servicios-destacados {
-	text-align: center;
+.caracteristicas {
+	float: left;
+	width: 350px;
+	margin-top: 30px;
 }
 
-h3 {
-	color: #132c42;
+.imagen-mitad {
+	width: 300px;
+	float: left;
+	margin:0 100px;
+}
+
+.caract-izq article {
+	position: relative;
+	text-align: right;
+	padding-right: 70px;
+	margin-top: 30px;
+}
+
+.caract-izq article img {
+	top: 0;
+	right: 0;
+	position: absolute;
+}
+
+.caract-der article {
+	padding-left: 70px;
+	position: relative;
+	margin-top: 30px;
+}
+
+.caract-der article img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.caracteristicas h3 {
+	color: #102c41;
 	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 15px;
+	font-size:15px;
+	padding-top: 20px;
+	letter-spacing: 3px;
 }
 
 .servicios-destacados p, .caracteristicas p, .tabla-precios p, td {
@@ -106,15 +238,73 @@ h3 {
 }
 
 .contenedor-secundario {
-	background-image: url(../img/indexbanner-bg2.jpg);
-	height: 688px;
+	background-image: url(../img/pricing-bg.jpg);
+	min-height: 500px;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-position: center top;
+	margin-top: -100px;
+}
+
+
+/* COMPARACION DE PRECIOS */
+
+
+.contenedor-subtitulo {
+	margin-left: 350px;
+	width: 500px;
+	text-align: center;
+	display: inline-block;
+}
+
+.subtitle-precios {
+	color: #132c42;
+	font-size: 38px;
+	margin: 180px 0 10px;
+	display: inline-block;
+}
+
+
+
+.contenedor-precios{
+	margin: 0 auto;
+}
+
+
+.tabla-precios {
+	width: 270px;
+	float: left;
+	background-color: #FFF;
+	margin: 15px;
+	padding-top: 60px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 60px;
+	border: solid 1px #ccc;
+}
+
+
+.tabla-precios h3 {
+	font-size: 15px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #122e43;
 }
 
 .tabla-precios h2 {
-	font-size: 45px;
-	font-weight: 700;
+	font-size: 50px;
+	color: #122e43;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 0px;
+}
+
+.tabla-precios p {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	padding-bottom: 45px;
+	border-bottom: solid 1px #ccc;
+
 }
 
 sup {
@@ -142,7 +332,12 @@ sup {
 	color: #ff5f3d;
 }
 
-.boton-tabla {
+.tabla-precios table {
+	width: 100%;
+	line-height: 30px;
+}
+
+.tabla-precios button {
 	border: none;
 	background-color: #00aef3;
 	text-transform: uppercase;
@@ -151,15 +346,22 @@ sup {
 	font-weight: 700;
 	letter-spacing: 2px;
 	height: 40px;
-	width: 150px;
+	width: 100%;
 	border-radius: 5px;
+	margin-top: 20px;
 }
+
+
+/* FOOTER */
 
 .ver-mas {
 	background-color: #142e3f;
 	height: 250px;
 	text-align: center;
+	margin-top: 400px;
+	padding-top: 70px;
 }
+
 
 .ver-mas h3 {
 	color: #FFF;
@@ -168,6 +370,7 @@ sup {
 	font-size: 30px;
 }
 
+
 .ver-mas span {
 	color: #00aef3;
 	font-weight: 700;
@@ -175,17 +378,31 @@ sup {
 
 .pie {
 	background-color: #091722;
-	height: 120px;
+	height: 110px;
 }
 
 .pie p {
+	margin: 0;
 	color: #FFF;
 	font-weight: 200;
 	font-size: 13px;
+	margin-top: 45px;
+	display: inline-block;
 }
 
 .pie a {
 	color: #FFF;
 	font-weight: 400;
 	font-size: 13px;
+}
+
+
+.pie ul {
+	float: right;
+	margin-top: 45px;
+}
+
+.pie li {
+	display: inline-block;
+	margin-left: 15px;
 }
