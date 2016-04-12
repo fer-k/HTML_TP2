@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
 <head>
 	<title>TP Maquetado</title>
 	<link rel="stylesheet" href="css/styles.css">
@@ -18,7 +19,6 @@
 	</header>
 
 
-<!-- por qué section y después wrapper? -->
 	<section class="contenedor-inicial">
 		<article class="wrapper">
 		
@@ -111,39 +111,50 @@
 	</section>
 
 	<section class="contenedor-secundario">
+		<div class="cleaner"></div>
 		<article class="wrapper">
+			<div class="cleaner"></div>
 
-			<div class="contenedor-subtitulo">
-				<h2 class="subtitle-precios">Pricing Tables</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur</p>
-			</div>
+			
+			<h2 class="subtitle-precios">Pricing Tables</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur</p>
+			
 
 			<section class="contenedor-precios">
 
 				<article class="tabla-precios">
-					<h3>small package</h3>
-					<h2><sup>$</sup>95<sup>.99</sup></h2>
-					<p>/mount</p>
 
 					<table>
 						<tr>
-							<td>Hard Drive Gb</td>
-							<td class="valor-tabla color1">2</td>
+							<td colspan="2"><h3>small package</h3></td>
+						</tr>
+				
+						<tr>
+							<td colspan="2"><h2><sup>$</sup>15<sup>.99</sup></h2></td>
+						</tr>					
+					
+						<tr>
+							<td colspan="2"><p>/mount</p></td>
+						</tr>
+									
+						<tr>
+							<td width="80%">Hard Drive Gb</td>
+							<td width="20%"><span class="valor-tabla color1">2</span></td>
 						</tr>
 
 						<tr>
-							<td>Transfer, Gb</td>
-							<td class="valor-tabla color1">1</td>
+							<td width="80%">Transfer, Gb</td>
+							<td width="20%"><span class="valor-tabla color1">1</span></td>
 						</tr>
 
 						<tr>
-							<td>Data bases</td>
-							<td class="valor-tabla color1">1</td>
+							<td width="80%">Data bases</td>
+							<td width="20%"><span class="valor-tabla color1">1</span></td>
 						</tr>
 
 						<tr>
-							<td>Data bases</td>
-							<td class="valor-tabla color1">1</td>
+							<td width="80%">Data bases</td>
+							<td width="20%"><span class="valor-tabla color1">1</span></td>
 						</tr>
 					</table>
 
@@ -151,26 +162,38 @@
 				</article>
 
 				<article class="tabla-precios">
-					<h3>small package</h3>
-					<h2><sup>$</sup>95<sup>.99</sup></h2>
-					<p>/mount</p>
 
 					<table>
 						<tr>
-							<td>Hard Drive Gb</td>
-							<td class="valor-tabla color2">2</td>
+							<td colspan="2"><h3>normal package</h3></td>
 						</tr>
+				
 						<tr>
-							<td>Transfer, Gb</td>
-							<td class="valor-tabla color2">1</td>
+							<td colspan="2"><h2><sup>$</sup>49<sup>.99</sup></h2></td>
+						</tr>					
+					
+						<tr>
+							<td colspan="2"><p>/mount</p></td>
 						</tr>
+									
 						<tr>
-							<td>Data bases</td>
-							<td class="valor-tabla color2">1</td>
+							<td width="80%">Hard Drive Gb</td>
+							<td width="20%"><span class="valor-tabla color2">5</span></td>
 						</tr>
+
 						<tr>
-							<td>Data bases</td>
-							<td class="valor-tabla color2">1</td>
+							<td width="80%">Transfer, Gb</td>
+							<td width="20%"><span class="valor-tabla color2">2</span></td>
+						</tr>
+
+						<tr>
+							<td width="80%">Data bases</td>
+							<td width="20%"><span class="valor-tabla color2">2</span></td>
+						</tr>
+
+						<tr>
+							<td width="80%">Data bases</td>
+							<td width="20%"><span class="valor-tabla color2">2</span></td>
 						</tr>
 					</table>
 
@@ -178,59 +201,85 @@
 				</article>
 
 				<article class="tabla-precios">
-					<h3>small package</h3>
-					<h2><sup>$</sup>95<sup>.99</sup></h2>
-					<p>/mount</p>
 
 					<table>
 						<tr>
-							<td>Hard Drive Gb</td>
-							<td class="valor-tabla color3">2</td>
+							<td colspan="2"><h3>big package</h3></td>
 						</tr>
+				
 						<tr>
-							<td>Transfer, Gb</td>
-							<td class="valor-tabla color3">1</td>
+							<td colspan="2"><h2><sup>$</sup>99<sup>.99</sup></h2></td>
+						</tr>					
+					
+						<tr>
+							<td colspan="2"><p>/mount</p></td>
 						</tr>
+									
 						<tr>
-							<td>Data bases</td>
-							<td class="valor-tabla color3">1</td>
+							<td width="80%">Hard Drive Gb</td>
+							<td width="20%"><span class="valor-tabla color3">10</span></td>
 						</tr>
+
 						<tr>
-							<td>Data bases</td>
-							<td class="valor-tabla color3">1</td>
+							<td width="80%">Transfer, Gb</td>
+							<td width="20%"><span class="valor-tabla color3">3</span></td>
+						</tr>
+
+						<tr>
+							<td width="80%">Data bases</td>
+							<td width="20%"><span class="valor-tabla color3">3</span></td>
+						</tr>
+
+						<tr>
+							<td width="80%">Data bases</td>
+							<td width="20%"><span class="valor-tabla color3">3</span></td>
 						</tr>
 					</table>
 
 					<button type="button" class="boton-tabla">select plan</button>
 				</article>
 
-				<article class="tabla-precios">
-					<h3>small package</h3>
-					<h2><sup>$</sup>95<sup>.99</sup></h2>
-					<p>/mount</p>
+				<article class="tabla-precios last">
 
 					<table>
 						<tr>
-							<td>Hard Drive Gb</td>
-							<td class="valor-tabla color4">2</td>
+							<td colspan="2"><h3>best package</h3></td>
 						</tr>
+				
 						<tr>
-							<td>Transfer, Gb</td>
-							<td class="valor-tabla color4">1</td>
+							<td colspan="2"><h2><sup>$</sup>199<sup>.99</sup></h2></td>
+						</tr>					
+					
+						<tr>
+							<td colspan="2"><p>/mount</p></td>
 						</tr>
+									
 						<tr>
-							<td>Data bases</td>
-							<td class="valor-tabla color4">1</td>
+							<td width="80%">Hard Drive Gb</td>
+							<td width="20%"><span class="valor-tabla color4">15</span></td>
 						</tr>
+
 						<tr>
-							<td>Data bases</td>
-							<td class="valor-tabla color4">1</td>
+							<td width="80%">Transfer, Gb</td>
+							<td width="20%"><span class="valor-tabla color4">4</span></td>
+						</tr>
+
+						<tr>
+							<td width="80%">Data bases</td>
+							<td width="20%"><span class="valor-tabla color4">4</span></td>
+						</tr>
+
+						<tr>
+							<td width="80%">Data bases</td>
+							<td width="20%"><span class="valor-tabla color4">4</span></td>
 						</tr>
 					</table>
 
 					<button type="button" class="boton-tabla">select plan</button>
 				</article>
-			</section>		
+
+			<div class="cleaner"></div>	
+			</section>				
 
 		</article>
 	</section>
