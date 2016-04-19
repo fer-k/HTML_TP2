@@ -1,49 +1,74 @@
 <!doctype html>
 <html>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
 <head>
-	<title>Formulario TP2</title>
+	<title>TP Maquetado</title>
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-	<nav>
-		<img src="logo.png">
-		<ul>
-			<li><a href="#">HOME</a></li>
-			<li><a href="#">CONTACT</a></li>
-		</ul>
-	</nav>
-
-	<header>
-		<img src="#">
-		<h1>Contact</h1>
-		<p>asdasd asdjfhasdjk asdasd asdjfhasdjk asdasd</p>
+	
+	<header>	
+		<img src="img/header-logo.png" alt="logo Hostro">
+		<nav>
+			<ul>
+				<li><a href="#">home</a></li>
+				<li><a href="#">contact</a></li>
+			</ul>
+		</nav>
+		<div class="cleaner"></div>
 	</header>
 
-	<section>
-		<h2>Get in Touch</h2>
-		<p>asdasd asdjfhasdjk asdasd asdjfhasdjk asdasd</p>
+	<section class="contenedor-contacto">
+		
+			<h1 class="contact-title">Contact</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	
 	</section>
 
-	<form>
-		<input type="text" placeholder="Name">
-		<input type="text" placeholder="Surname">
-		<input type="text" placeholder="Subject">
-		<textarea placeholder="Message"></textarea>
-		<input type="submit" value="SUBMIT">	
-	</form>
+	<article class="wrapper">
+
+		<h2 class="subtitle-contact">Get in Touch</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur</p>
+
+		<form class="form-izq">
+			<input type="text" placeholder="Name" class="campo-form">
+			<input type="text" placeholder="Surname" class="campo-form">
+			<input type="text" placeholder="Subject" class="campo-form">
+		</form>
+	
+		<form class="form-der">
+			<textarea placeholder="Message" class="mensaje"></textarea>
+		</form>
+
+		<div class="cleaner"></div>
+
+		<form class="boton-contacto">	
+			<input type="submit" value="SUBMIT">	
+		</form>	
+
+	</article>
+
 
 	<footer>
-		<div>Hosting use <span>500,000</span> happy customers. Want to see services?
+		<div class="ver-mas">
+			<h3>Hosting use <span>500.000</span> happy customers. Want to see services?</h3>
 		</div>
-		<div>
-			<p>Some text</p>
-			<ul>
-				<li>Home</li>
-				<li>Contact</li>
-				<li><img src="#"></li>
-			</ul>
+
+		<div class="pie">
+			<div class="wrapper">
+				<p class="derechos">© 2015 Hostro. All rights reserved.</p>
+
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Contact</a></li>
+					<li></li>
+				</ul>
+			</div>
 		</div>
+
+
 	</footer>
 </body>
 </html>
