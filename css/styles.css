@@ -536,10 +536,19 @@ sup {
 		width: 96%;
 	}
 	
+	header nav{
+		display: inline-block;
+		float: none;
+		margin-left: 18%;
+	}
 	
+	.contenedor-inicial {
+		margin-top: 20px;
+	}
+
 	.servicios-destacados article {
 		width: 50%;
-		min-height: 300px;
+		min-height: 380px;
 	}
 
 	.subtitle {
@@ -567,8 +576,28 @@ sup {
 
 @media (max-width: 700px) {
 
+	header{
+		position: static;
+		text-align: center;
+	}
+	header nav{
+		display: block;
+		margin-left: 0;
+	}
+
+	header nav ul {
+		padding: 0;
+	}
+
+	header nav li{
+		display: block;
+		padding: 10px 0;
+		margin-left: 0;
+	}
+
 	.contenedor-inicial {
 		margin-top: 0;
+		background: none;
 	}
 
 	.main-title , .main-title + p {
@@ -580,7 +609,7 @@ sup {
 	}
 
 	.servicios-destacados {
-		margin-top: 650px;
+		margin-top: 100px;
 	}	
 
 	.caracteristicas {
@@ -616,7 +645,7 @@ sup {
 
 	.form-izq, .form-der {
 		width: 100%;
-		
+
 	}
 }
 
@@ -641,7 +670,7 @@ sup {
 	}
 
 	.servicios-destacados {
-		margin-top: 30px;
+		margin-top: 100px;
 	}
 
 	.servicios-destacados article{
