@@ -62,6 +62,10 @@ header img {
 }
 
 
+header a:hover {
+	color: #142e3f;
+}
+
 /* BANNER PPAL */
 
 .contenedor-inicial {
